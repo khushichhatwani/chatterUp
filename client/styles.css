@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#chat-container {
+    margin: 50px auto;
+    background: rgb(158, 155, 155);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background-color:#ddcfea
+}
+.container{
+    flex: 1;
+}
+.chat-area{
+    flex: 2;
+}
+#notification-panel {
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#message-container {
+    height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+}
+.online-users-panel {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.online-user-list {
+    max-height: 150px;
+    /* Limit the height */
+    overflow-y: auto;
+    /* Scroll if needed */
+}
+#send-button{
+    background-color: rgb(118, 88, 227);
+    color: #f4f4f4;
+}
+/* General message container styling */
+.message {
+    max-width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 12px;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* User-sent message styling */
+.user-message {
+    background-color: #8f79f3;
+    /* Light green for user's messages */
+    text-align: right;
+    align-self: flex-end;
+    margin-left: auto;
+    padding: 10px;
+    width: max-content;
+    margin-right:10px;
+        border-radius: 12px;
+        color:#fff
+}
+
+/* Received message styling */
+.other-message {
+    background-color: #fff;
+    /* White background for other users' messages */
+    border: 1px solid #ccc;
+    text-align: left;
+    margin-right: auto;
+    padding: 10px;
+        width: max-content;
+        margin: 10px 0;
+            border-radius: 12px;
+}
+
+/* Styling for the message timestamp */
+.message-time {
+    font-size: 12px;
+    color: #191818;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+}
